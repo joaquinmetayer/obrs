@@ -1,30 +1,29 @@
-import { Component } from "react";
-import Producto from "./Producto";
+import { Component } from 'react'
+import Producto from './Producto'
 
 const styles = {
   productos: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-};
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  }
+}
 
-class productos extends Component {
+class Productos extends Component {
   render() {
-    const { productos, agregarAlCarro } = this.props;
+    const { productos, agregarAlCarro } = this.props
 
     return (
       <div style={styles.productos}>
-        {productos.map((producto) => (
+        {productos.map(producto =>
           <Producto
             agregarAlCarro={agregarAlCarro}
             key={producto.name}
             producto={producto}
-          />
-        ))}
+          />)}
       </div>
-    );
+    )
   }
 }
 
-export default productos;
+export default Productos
