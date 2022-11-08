@@ -16,6 +16,7 @@ const styles = {
 
 class Producto extends Component {
   render() {
+    // paso de nuevo las props que setie desde productos
     const { producto, agregarAlCarro } = this.props
 
     return (

@@ -13,6 +13,8 @@ const styles = {
 class Button extends Component {
   render() {
     return (
+      // con el this.props le paso todas las propiedades de boton que tengo
+      // como lo es la propiedad onclick que defini en producto
       <button style={styles.button} {...this.props} />
     )
   }

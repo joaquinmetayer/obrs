@@ -15,6 +15,8 @@ const styles = {
 class Layout extends Component {
   render() {
     return (
+      // dos divs, uno para centrar la pagina en general
+      // y otro pinterior para que no se apliquen los estilos de la pagina en general como el centrado
       <div style={styles.layout}>
         <div style={styles.container}>
           {this.props.children}

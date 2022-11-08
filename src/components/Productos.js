@@ -11,6 +11,7 @@ const styles = {
 
 class Productos extends Component {
   render() {
+    // traigo de las propiedades que le pase por app.js lo que voy a utilizar
     const { productos, agregarAlCarro } = this.props
 
     return (
